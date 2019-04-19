@@ -10,10 +10,9 @@ import argparse
 parser = argparse.ArgumentParser(description='Process some integer for number cyrcle print Text.')
 parser.add_argument('Input_float', type=float  , help='Float')
 parser.add_argument('Input_int_round', type=int, help='Number of character')
-round_a = parser.parse_args().Input_float * (10**parser.parse_args().Input_int_round) + 0.41
-round_a = round_a // 1
-c = round_a / 10**parser.parse_args().Input_int_round
-print(c)
+round_a = int(parser.parse_args().Input_float * (10**parser.parse_args().Input_int_round) + 0.41)
+End = round_a / 10**parser.parse_args().Input_int_round
+print(End)
 
 
 
